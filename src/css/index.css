@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/*头部文件上面样式 就是登入注册这一列*/
+#topHeader {
+  width: 100%;
+  background: #f2f2f2;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+  z-index: 980; }
+
+#topHeader .top-main {
+  width: 1200px;
+  height: 26px;
+  line-height: 26px;
+  margin: 0 auto;
+  position: relative; }
+
+#topHeader .top-main .main-left {
+  overflow: hidden;
+  height: 26px;
+  position: absolute;
+  left: 0;
+  top: 0; }
+  #topHeader .top-main .main-left p, #topHeader .top-main .main-left a {
+    margin-right: 6px;
+    float: left;
+    line-height: 26px;
+    color: #999; }
+  #topHeader .top-main .main-left a:hover {
+    color: #cc0001;
+    text-decoration: underline; }
+
+#topHeader .top-main .main-right {
+  height: 26px;
+  float: right; }
+
+#topHeader .top-main .main-right li {
+  height: 26px;
+  float: left;
+  padding: 0 3px;
+  position: relative; }
+  #topHeader .top-main .main-right li .publicIcon {
+    background: url(../img/public-24.png) no-repeat; }
+
+#topHeader .main-right li:nth-of-type(1) {
+  width: 72px; }
+  #topHeader .main-right li:nth-of-type(1) .myjiuxian s {
+    width: 9px;
+    height: 8px;
+    background-position: -99px 3px;
+    padding-top: 1px;
+    margin: 9px 3px 9px 1px;
+    float: right;
+    display: inline-block;
+    color: #999; }
+  #topHeader .main-right li:nth-of-type(1) .myjiuxian a {
+    text-indent: 4px;
+    display: inline-block; }
+  #topHeader .main-right li:nth-of-type(1) a:hover {
+    color: #cc0001;
+    text-decoration: underline; }
+  #topHeader .main-right li:nth-of-type(1) .myjiuxianbox {
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+    position: absolute;
+    top: 26px;
+    left: -1px;
+    z-index: 206;
+    background: #fff;
+    padding: 0px 0;
+    display: none; }
+    #topHeader .main-right li:nth-of-type(1) .myjiuxianbox a {
+      display: block;
+      width: 72px;
+      height: 26px;
+      line-height: 26px;
+      text-align: center; }
+
+.midHeader {
+  min-width: 1200px; }
+  .midHeader .midHeaderCon {
+    width: 1200px;
+    height: 125px;
+    margin: 0 auto; }
+    .midHeader .midHeaderCon .headerLogo {
+      width: 257px;
+      height: 65px;
+      float: left;
+      margin-top: 30px; }
+      .midHeader .midHeaderCon .headerLogo .jxwLogo {
+        width: 137px;
+        height: 65px;
+        margin-right: 10px; }
+      .midHeader .midHeaderCon .headerLogo p {
+        float: left;
+        text-align: left; }
+
+.headerSearch {
+  width: 340px;
+  float: left;
+  margin: 32px 0 0 20px; }
+  .headerSearch .searchHome {
+    height: 32px;
+    border: 3px solid #c00;
+    position: relative;
+    z-index: 222; }
+    .headerSearch .searchHome .searchCon {
+      width: 250px;
+      position: absolute;
+      left: -3px;
+      top: 35px;
+      z-index: 205;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-top: 0;
+      display: none; }
+
+.headerProtect {
+  width: 363px;
+  float: right;
+  height: 64px;
+  margin: 33px 0 0 0;
+  background: url(../img/headerProPic1.png) no-repeat top left; }
+  .headerProtect a {
+    display: inline-block;
+    width: 106px;
+    height: 43px;
+    margin-left: 15px; }
+
+#navwrap {
+  width: 100%;
+  height: 50px;
+  background-color: #333333; }
+
+#mainWrap {
+  width: 100%;
+  height: 600px;
+  background: green; }
+
+#bottomMain {
+  width: 100%;
+  height: 500px;
+  background: blue; }
+
+#topFocusBox a {
+  display: block;
+  width: 100%;
+  height: 90px; }
+
+/*# sourceMappingURL=index.css.map */

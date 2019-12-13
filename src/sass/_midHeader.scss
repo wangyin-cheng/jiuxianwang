@@ -1,0 +1,66 @@
+@charset "utf-8";
+// logo图片的一行的样式
+//1， logo图片
+.midHeader {
+    min-width: 1200px;
+    .midHeaderCon {
+        width: 1200px;
+        height: 125px;
+        margin: 0 auto;
+        .headerLogo {
+            width: 257px;
+            height: 65px;
+            float: left;
+            margin-top: 30px;
+            .jxwLogo {
+                width: 137px;
+                height: 65px;
+                margin-right: 10px;
+            }
+             p {
+                float: left;
+                text-align: left;
+            }
+            
+        }
+    }
+}
+//2， 输入框的样式
+.headerSearch {
+    width: 340px;
+    float: left;
+    // display: inline-block;
+    margin: 32px 0 0 20px;
+   .searchHome {
+        height: 32px;
+        border: 3px solid #c00;
+        position: relative;
+        z-index: 222;
+       .searchCon {
+            width: 250px;
+            position: absolute;
+            left: -3px;
+            top: 35px;
+            z-index: 205;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-top: 0;
+            display: none;
+        }
+    }
+}
+//3，酒仙网小程序的图片
+.headerProtect {
+    width: 363px;
+    float: right;
+    height: 64px;
+    margin: 33px 0 0 0;
+    // display: inline-block;
+    background: url(../img/headerProPic1.png) no-repeat top left;
+    a {
+        display: inline-block;
+        width: 106px;
+        height: 43px;
+        margin-left: 15px;
+    }
+}

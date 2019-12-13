@@ -1,0 +1,96 @@
+@charset "utf-8";
+/*头部文件上面样式 就是登入注册这一列*/
+#topHeader{
+    width: 100%;
+    background: #f2f2f2;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    z-index: 980;
+   
+}
+#topHeader .top-main{
+    width: 1200px;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 auto;
+    position: relative;
+}
+#topHeader .top-main .main-left{
+    overflow: hidden;
+    height: 26px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    p,a{
+    margin-right: 6px;
+    float: left;
+    line-height: 26px;
+    color: #999;
+    }
+    a:hover{
+        color: #cc0001;
+        text-decoration: underline;
+    }
+    
+}
+#topHeader .top-main .main-right{
+    height: 26px;
+    float: right;
+}
+#topHeader .top-main .main-right li{
+    height: 26px;
+    float: left;
+    padding:  0 3px;
+    position: relative;
+    .publicIcon{
+        background: url(../img/public-24.png) no-repeat;
+    }
+   
+}
+#topHeader .main-right li:nth-of-type(1){
+    width: 72px;
+   
+    .myjiuxian{
+       
+        s{
+          width: 9px;
+        height: 8px;
+        background-position: -99px 3px;
+        padding-top: 1px;
+        margin: 9px 3px 9px 1px;
+        float: right;
+        display: inline-block;
+        color: #999;
+        }
+      a{
+         text-indent: 4px;
+          display: inline-block;
+      }
+     
+    }
+    
+    a:hover{
+        color: #cc0001;
+        text-decoration: underline;
+    }
+    .myjiuxianbox{
+        border: 1px solid #e5e5e5;
+        border-top: 0;
+        position: absolute;
+        top: 26px;
+        left: -1px;
+        z-index: 206;
+        background: #fff;
+        padding: 0px 0;
+        display: none;
+        a{
+            display: block;
+            width: 72px;
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+          
+        }
+    }
+  
+}
