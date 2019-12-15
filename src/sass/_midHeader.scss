@@ -1,7 +1,7 @@
 @charset "utf-8";
 // logo图片的一行的样式
 //1， logo图片
-.midHeader {
+#midHeader {
     min-width: 1200px;
     .midHeaderCon {
         width: 1200px;
@@ -25,30 +25,95 @@
         }
     }
 }
+
 //2， 输入框的样式
 .headerSearch {
-    width: 340px;
+    width: 540px;
     float: left;
-    // display: inline-block;
     margin: 32px 0 0 20px;
    .searchHome {
-        height: 32px;
+        height: 38px;
         border: 3px solid #c00;
         position: relative;
         z-index: 222;
-       .searchCon {
-            width: 250px;
-            position: absolute;
-            left: -3px;
-            top: 35px;
-            z-index: 205;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-top: 0;
-            display: none;
+    .search-form{
+        width: 300px;
+        height: 25px;
+        line-height: 22px;
+        margin: 3px 5px;
+        border: 0 none;
+        color: #666;
+        float: left;
+    }
+    .search-btn{
+        width: 85px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        border: 0;
+        font-size: 16px;
+        color: #fff;
+        background: #c00;
+        cursor: pointer;
+        font-family: "微软雅黑";
+        float: right;
+    }
+
+    }
+    
+}
+//<!-- 下拉提示文字的框 -->
+.searchHome .searchCon {
+    width: 250px;
+    position: absolute;
+    left: -3px;
+    top: 35px;
+    z-index: 205;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: 0;
+}
+// 输入框下面的文字。
+.headerSearch .hotWords{
+    width: 540px;
+    height: 23px;
+    overflow: hidden;
+    padding-top: 5px;
+    p{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    left: -8px;
+    z-index: 1;
+    a{
+        float: left;
+    display: inline-block;
+    color: #999;
+    padding: 0 8px;
+    height: 18px;
+    position: relative;
+        &:hover{
+            color: #cc0001;
+        text-decoration: underline;
         }
     }
+    s{
+        display: block;
+    height: 12px;
+    width: 0;
+    font-size: 0;
+    line-height: 0;
+    border-left: 1px solid #999;
+    position: absolute;
+    left: -1px;
+    top: 4px;
+    }
+    }
+ 
 }
+
 //3，酒仙网小程序的图片
 .headerProtect {
     width: 363px;

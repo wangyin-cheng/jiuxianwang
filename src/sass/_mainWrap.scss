@@ -2,6 +2,64 @@
 //  <!-- 中间部分 -->
 #mainWrap{
     width: 100%;
-    height: 600px;
-    background: green;
+    
+    .luobowrap{
+        width: 100%;
+        position: relative;
+        height: 470px;
+        background: #f9f9f9;
+        overflow: hidden;
+        z-index: 11;
+    }
+}
+//轮播图
+.luobowrap .bigImg ul{
+    position: relative;
+    width: 100% !important;
+    height: 470px;
+    li{
+        width: 100% !important;
+        height: 470px;
+        overflow: hidden;
+        text-align: center;
+       
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+    }
+}
+#mainWrap .imgBnt{
+  
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 435px;
+    width: 100%;
+    z-index: 999;
+    .OL{
+        height: 20px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 21;
+    text-align: center;
+    }
+    span{
+        width: 20px;
+        text-align: center;
+        overflow: hidden;
+            background: #000;
+        border-radius: 50%;
+        box-shadow: 0 0 3px;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        margin-right: 8px;
+        opacity: 0.8;
+    }
 }

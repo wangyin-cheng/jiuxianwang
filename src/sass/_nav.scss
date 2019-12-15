@@ -1,7 +1,255 @@
 @charset "utf-8";
 // 导航条的样式
+//1第一块导航
 #navwrap{
     width: 100%;
-    height: 50px;
-    background-color: #333333;
+    height: 34px;
+    background: #900;
+    position: relative;
+    z-index: 99;
+    .nav{
+        width: 1200px;
+        height: 34px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 99;
+        .commodity{
+            width: 190px;
+            float: left;
+            position: relative;
+            z-index: 200;
+            ul{
+                position: absolute;
+            }
+            h2{
+                
+                width: 190px;
+                height: 34px;
+                line-height: 34px;
+                text-align: center;
+                cursor: pointer;
+                font-family: 微软雅黑;
+                font-size: 14px;
+                color: rgb(255, 255, 255);
+                font-weight: 600;
+                // box-shadow: rgba(0, 0, 0, 0.2) 4px 2px 5px;
+                background: rgb(206, 23, 31);
+            }
+        }
+    }
+}
+.commodity li{
+    float: left;
+    width: 190px;
+    height: 81px;
+    background: #fff;
+    border-bottom: 1px solid #e4e4e4;
+ 
+
+    .innerLi{
+        width: 163px;
+        height: 81px;
+        padding: 0 10px;
+        border-left: 3px solid #fff;
+        h3{
+            line-height: 32px;
+            height: 32px;
+            font-size: 14px;
+            overflow: hidden;
+            font-weight: normal;
+            padding-top: 3px;
+            color: #333;
+           
+            i{
+                display: inline-block;
+                width: 14px;
+                height: 20px;
+                margin-right: 10px;
+                vertical-align: middle;
+                position: relative;
+                top: 2px;
+                left:  5px;
+                background: url(../img/public-24.png) no-repeat;
+            }
+        }
+        p{
+            width: 170px;
+            height: 20px;
+            overflow: hidden;
+            a{
+                display: inline-block;
+                height: 16px;
+                line-height: 16px;
+                padding: 0 4px;
+                color: #666;
+                float: left;
+                margin: 2px 3px 2px 0;
+            }
+        }
+    }
+}
+.nav .commodity li:nth-of-type(1) h3{
+    i{
+        background-position: -73px -260px;
+    }
+
+}
+.nav .commodity li:nth-of-type(2) h3{
+    i{
+        background-position: 2px -100px;
+    }
+}
+.nav .commodity li:nth-of-type(3) h3{
+    i{
+      background-position: -16px -102px;  
+    }
+}
+.nav .commodity li:nth-of-type(4) h3{
+    i{
+        background-position: -37px -100px;
+    }
+}
+.nav .commodity li:nth-of-type(5) h3{
+    i{
+        background-position: -59px -100px;
+    }
+}
+.nav .commodity li:nth-of-type(6){
+    height: 65px;
+    .innerLi{
+        height: 100%;      
+    }
+    h3{
+      i{
+        background-position: -79px -100px;
+        }  
+    }
+    
+}
+//第二级菜单  
+.commodity .menuBox{
+    width: 615px;
+    height: 470px;
+    position: absolute;
+    left: 190px;
+    top: 34px;
+    z-index: 301;
+    box-shadow: 0 0 4px 0 #ccc;
+    .menuCon{
+        width: 400px;
+        height: 470px;
+        float: left;
+        display: inline-block;
+        background: #f1f1f1;
+        overflow: hidden;
+       .title {
+            width: 60px;
+            float: left;
+            padding: 10px 10px 10px 20px;
+            line-height: 22px;
+            text-align: right;
+            border-top: 1px solid #f1f1f1;
+           
+            h3{
+                font-size: 14px;
+                color: #333;
+                font-weight: 700;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+        // .mian-warp{
+        //     padding: 0px 5px;
+        // }
+        .main{
+            width: 340px;
+            padding: 10px 0 10px;
+            overflow: hidden;
+            border-top: 1px dotted #ccc;
+            background-color: white;
+            p{
+                margin: 0 15px 0 15px;
+                padding: 10px 0 10px;
+                overflow: hidden;
+                a{
+                    display: inline-block;
+                    float: left;
+                    white-space: nowrap;
+                    padding: 0 8px;
+                    // background: url(../../img/newIndexImg/menuLine.jpg) no-repeat scroll left
+                }
+            }
+        }
+    }
+    .pictrue{
+      width: 215px;
+    height: 470px;
+    float: right;
+    position: relative;
+    z-index: 201; 
+        a{
+            display: block;
+            width: 220px;
+            height: 470px;
+            position: absolute;
+            top: 0;
+            right: -5px;
+            
+        } 
+    }
+}
+
+
+
+//2第二块横着的导航
+.nav ol{
+    float: left;
+    margin-left: 190px;
+    li{
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+        float: left;
+        position: relative;
+        z-index: 203;
+        a{
+            display: inline-block;
+            height: 34px;
+            color: #fff;
+            font-size: 14px;
+            padding: 0 22px;
+            &:hover{
+                background: #b40c10;
+            }
+        }
+        .publicIcon{
+            background-position: 0 -264px;
+            display: block;
+            font-size: 0;
+            height: 17px;
+            line-height: 0;
+            position: absolute;
+            right: 6px;
+            top: -6px;
+            width: 29px;
+            z-index: 203;
+        }
+    }
+    .show{
+        background: #b40c10;
+    }
+   
+    span {
+        background: url(../img/public-24.png) no-repeat;
+    }
+    
+}
+
+// 图片的样式
+#navwrap .dpicture{
+    float: right;
+    height: 100%;
+    img{
+        display: block;
+    }
 }
