@@ -513,6 +513,348 @@
     margin-right: 8px;
     opacity: 0.8; }
 
+.MianTab {
+  width: 1200px;
+  padding-top: 10px;
+  overflow: hidden;
+  margin: 0 auto; }
+  .MianTab .tabLeft {
+    float: left;
+    width: 920px;
+    background: #fff;
+    height: 499px; }
+    .MianTab .tabLeft .titie {
+      width: 920px;
+      overflow: hidden;
+      height: 38px;
+      position: relative;
+      background-color: darkblue; }
+    .MianTab .tabLeft .content {
+      border: 1px solid #ececec;
+      border-top: none;
+      height: 460px;
+      overflow: hidden;
+      background-color: cyan; }
+  .MianTab .tabRight {
+    width: 270px;
+    float: right;
+    height: 500px; }
+    .MianTab .tabRight .tabLbNew {
+      width: 270px;
+      height: 140px;
+      background: #fff;
+      overflow: hidden;
+      background-color: darkblue; }
+    .MianTab .tabRight .tabLbpic {
+      width: 268px;
+      height: 157px;
+      border: 1px solid #ececec;
+      background: #fff;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      margin-top: 10px;
+      background-color: orange; }
+    .MianTab .tabRight .tabLbpicBox {
+      width: 268px;
+      height: 178px;
+      border: 1px solid #ececec;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      margin-top: 10px;
+      background-color: orangered; }
+
+.layerWarp {
+  width: 1200px;
+  margin: 0 auto; }
+  .layerWarp .ggBox {
+    height: 130px;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px; }
+    .layerWarp .ggBox p {
+      width: 290px;
+      height: 126px;
+      float: left;
+      margin: 0 0 0 90px; }
+      .layerWarp .ggBox p a img {
+        width: 290px;
+        height: 126px; }
+  .layerWarp .yhBox {
+    background: #fff;
+    z-index: 1;
+    position: relative;
+    margin-top: 10px; }
+    .layerWarp .yhBox .titleBox {
+      height: 40px;
+      line-height: 40px;
+      background: #f9f9f9;
+      padding: 0 3px; }
+      .layerWarp .yhBox .titleBox h3 {
+        margin: 10px 0 0 0;
+        float: left;
+        height: 20px;
+        line-height: 20px;
+        font-size: 0; }
+        .layerWarp .yhBox .titleBox h3 i {
+          background-position: 0 0;
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+          vertical-align: middle; }
+        .layerWarp .yhBox .titleBox h3 span {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 17px;
+          color: #333333;
+          font-family: 微软雅黑;
+          margin-left: 10px; }
+        .layerWarp .yhBox .titleBox h3 .newBoxI {
+          background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat; }
+  .layerWarp .newListDiv {
+    float: right;
+    height: 9px;
+    margin-top: 20px;
+    font-size: 0;
+    line-height: 0; }
+    .layerWarp .newListDiv span {
+      display: inline-block;
+      vertical-align: middle;
+      width: 9px;
+      height: 9px;
+      overflow: hidden;
+      background: #cccccc;
+      margin-left: 14px;
+      cursor: pointer; }
+    .layerWarp .newListDiv .on {
+      background: #cc0000; }
+  .layerWarp .newBoxI {
+    background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat; }
+
+.yhBox .listWarp {
+  border: 1px solid #ececec;
+  height: 260px;
+  background-color: orangered;
+  position: relative;
+  overflow: hidden; }
+  .yhBox .listWarp .raceLeft {
+    background-position: 0 -28px;
+    left: 0; }
+  .yhBox .listWarp .raceRight {
+    background-position: -28px -28px;
+    right: 0; }
+  .yhBox .listWarp .raceArrow {
+    width: 27px;
+    height: 56px;
+    display: block;
+    position: absolute;
+    top: 100px;
+    z-index: 100;
+    cursor: pointer; }
+
+.bjgMain {
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 10px; }
+  .bjgMain .titlebox {
+    height: 40px;
+    line-height: 40px;
+    background: #f9f9f9;
+    padding: 0 3px; }
+    .bjgMain .titlebox .comTitle {
+      float: left;
+      font-size: 0; }
+      .bjgMain .titlebox .comTitle i {
+        width: 28px;
+        height: 29px;
+        display: inline-block;
+        vertical-align: middle;
+        overflow: hidden;
+        font-family: Arial;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        line-height: 29px;
+        font-style: normal; }
+      .bjgMain .titlebox .comTitle .comIcon1 {
+        background-position: 0 -95px; }
+      .bjgMain .titlebox .comTitle span {
+        display: inline-block;
+        vertical-align: middle;
+        color: #333;
+        font-size: 17px;
+        margin-left: 10px;
+        font-family: "微软雅黑"; }
+    .bjgMain .titlebox .comIMue {
+      float: right;
+      margin-left: 50px;
+      display: inline;
+      color: #999; }
+      .bjgMain .titlebox .comIMue a {
+        padding: 0 7px;
+        color: #999; }
+      .bjgMain .titlebox .comIMue .goBlank {
+        padding: 4px 7px;
+        color: #fff;
+        background: #d43d4e;
+        height: 21px;
+        border-radius: 2px; }
+  .bjgMain .spiritWrap {
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    border-top: 2px solid #c94b56;
+    height: 485px;
+    overflow: hidden;
+    width: 100%; }
+  .bjgMain .topTenWrap {
+    height: 161px;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec; }
+    .bjgMain .topTenWrap .hotWordBox {
+      float: left;
+      width: 186px;
+      border-right: 1px solid #ececec;
+      background: #f9f9f9;
+      height: 160px;
+      padding: 20px 10px 10px 14px; }
+    .bjgMain .topTenWrap .topTenBox {
+      width: 985px;
+      float: right;
+      height: 162px; }
+  .bjgMain .newBoxI {
+    background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat; }
+
+.bjgMain .topTenWrap .hotWordBox .LI1 {
+  margin-top: 7px; }
+.bjgMain .topTenWrap .hotWordBox li {
+  width: 186px;
+  font-family: "微软雅黑"; }
+  .bjgMain .topTenWrap .hotWordBox li h3 {
+    color: #cc0000;
+    font-weight: bold;
+    padding-right: 5px;
+    font-size: 0; }
+    .bjgMain .topTenWrap .hotWordBox li h3 i {
+      width: 3px;
+      height: 3px;
+      display: inline-block;
+      vertical-align: middle;
+      background: #d02229;
+      overflow: hidden; }
+    .bjgMain .topTenWrap .hotWordBox li h3 span {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      margin-left: 5px; }
+  .bjgMain .topTenWrap .hotWordBox li p {
+    padding-left: 8px;
+    width: 178px;
+    height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+    margin-top: 5px; }
+    .bjgMain .topTenWrap .hotWordBox li p a {
+      float: left;
+      padding-right: 5px;
+      display: inline-block;
+      font-size: 10px; }
+
+.bjgMain .topTenWrap .topTenBox .topTenNavBox {
+  height: 32px;
+  line-height: 32px;
+  padding: 0 12px; }
+  .bjgMain .topTenWrap .topTenBox .topTenNavBox h3 {
+    float: left;
+    font-size: 0; }
+    .bjgMain .topTenWrap .topTenBox .topTenNavBox h3 i {
+      display: inline-block;
+      vertical-align: middle;
+      width: 11px;
+      height: 13px;
+      overflow: hidden; }
+    .bjgMain .topTenWrap .topTenBox .topTenNavBox h3 .topTen1 {
+      background-position: -38px 0; }
+    .bjgMain .topTenWrap .topTenBox .topTenNavBox h3 span {
+      font-size: 12px;
+      color: #d43d4e;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 5px; }
+  .bjgMain .topTenWrap .topTenBox .topTenNavBox .topTenNav {
+    float: right;
+    height: 32px; }
+    .bjgMain .topTenWrap .topTenBox .topTenNavBox .topTenNav a {
+      font-size: 12px;
+      height: 32px;
+      padding: 0 10px;
+      display: block;
+      float: left;
+      color: #666; }
+    .bjgMain .topTenWrap .topTenBox .topTenNavBox .topTenNav .on {
+      color: #cc0000;
+      text-decoration: none;
+      height: 32px;
+      padding: 0 10px; }
+    .bjgMain .topTenWrap .topTenBox .topTenNavBox .topTenNav span {
+      float: left;
+      display: block;
+      color: #cccccc; }
+.bjgMain .topTenWrap .topTenBox .topTenConWrap {
+  width: 985px;
+  height: 102px;
+  padding: 10px 0 15px 0;
+  overflow: hidden;
+  position: relative; }
+  .bjgMain .topTenWrap .topTenBox .topTenConWrap .topTenCon li {
+    float: left;
+    width: 190px;
+    margin-top: 10px;
+    padding-right: 7px; }
+    .bjgMain .topTenWrap .topTenBox .topTenConWrap .topTenCon li .topTenOne {
+      background-position: -150px -164px;
+      width: 11px;
+      display: block;
+      float: left;
+      height: 89px; }
+    .bjgMain .topTenWrap .topTenBox .topTenConWrap .topTenCon li .pic {
+      float: left; }
+    .bjgMain .topTenWrap .topTenBox .topTenConWrap .topTenCon li .text {
+      float: left;
+      width: 80px;
+      padding-top: 5px; }
+      .bjgMain .topTenWrap .topTenBox .topTenConWrap .topTenCon li .text .topTenTit {
+        width: 80px;
+        height: 36px;
+        line-height: 18px;
+        overflow: hidden;
+        font-family: "宋体"; }
+        .bjgMain .topTenWrap .topTenBox .topTenConWrap .topTenCon li .text .topTenTit a {
+          width: 80px;
+          height: 36px;
+          display: block; }
+      .bjgMain .topTenWrap .topTenBox .topTenConWrap .topTenCon li .text .topTenPrice {
+        font-size: 16px;
+        height: 18px;
+        line-height: 18px;
+        margin-top: 5px;
+        color: #cc0000;
+        width: 80px;
+        overflow: hidden;
+        font-family: "微软雅黑";
+        background: #fff; }
+        .bjgMain .topTenWrap .topTenBox .topTenConWrap .topTenCon li .text .topTenPrice strong {
+          font-size: 15px;
+          font-weight: normal;
+          color: #CD0100; }
+
 #bottomMain {
   width: 100%;
   height: 500px;

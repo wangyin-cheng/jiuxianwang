@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+.layerWarp{
+    width: 1200px;
+    margin: 0 auto;
+    .ggBox{
+        height: 130px;
+        position: relative;
+        z-index: 0;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 20px;
+       p{
+        width: 290px;
+        height: 126px;
+        float: left;
+        margin: 0 0 0 90px;
+        a{
+            img{
+                width: 290px;
+                height: 126px;
+            }
+        }
+        }
+    }
+    .yhBox{
+        background: #fff;
+        z-index: 1;
+        position: relative;
+        margin-top: 10px;
+        .titleBox{
+            height: 40px;
+            line-height: 40px;
+            background: #f9f9f9;
+            padding: 0 3px;
+            h3{
+                margin: 10px 0 0 0;
+                float: left;
+                // display: inline;
+                height: 20px;
+                line-height: 20px;
+                font-size: 0;
+                i{
+                    background-position: 0 0;
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 17px;
+                    color: rgb(51, 51, 51);
+                    font-family: 微软雅黑;
+                    margin-left: 10px;
+                }
+                .newBoxI{
+                    background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat;
+                }
+            }
+        }
+    }
+    .newListDiv{
+
+        float: right;
+        // display: inline;
+        height: 9px;
+        margin-top: 20px;
+        font-size: 0;
+        line-height: 0;
+       
+        span{
+            display: inline-block;
+            vertical-align: middle;
+            width: 9px;
+            height: 9px;
+            overflow: hidden;
+            background: #cccccc;
+            margin-left: 14px;
+            cursor: pointer;
+    
+        }
+        .on{
+            background: #cc0000;
+        }
+    }
+    .newBoxI {
+        background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat;
+    }
+}
+.yhBox .listWarp{
+    border: 1px solid #ececec;
+    height: 260px;
+    background-color: orangered;
+    position: relative;
+    overflow: hidden;
+    .raceLeft{
+        background-position: 0 -28px;
+        left: 0;
+    }
+    .raceRight{
+        background-position: -28px -28px;
+        right: 0;
+    }
+    .raceArrow{
+            width: 27px;
+        height: 56px;
+        display: block;
+        position: absolute;
+        top: 100px;
+        z-index: 100;
+        cursor: pointer;
+    }
+}
+
+

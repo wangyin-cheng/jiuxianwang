@@ -1,2 +1,64 @@
 @charset "utf-8";
 //  <!-- 中间部分 tab切换的区域-->
+.MianTab{
+    width: 1200px;
+    padding-top: 10px;
+    overflow: hidden;
+    margin:  0 auto;
+    .tabLeft{
+        float: left;
+          width: 920px;
+        background: #fff;
+        height: 499px;
+        .titie{
+            width: 920px;
+            
+            overflow: hidden;
+            height: 38px;
+            position: relative;
+            background-color: darkblue;
+        }   
+        .content{
+            border: 1px solid #ececec;
+            border-top: none;
+            height: 460px;
+            overflow: hidden;
+            background-color: cyan;
+     }
+    }
+    .tabRight{
+        width: 270px;
+        float: right;
+        height: 500px;
+        .tabLbNew{
+            width: 270px;
+            height: 140px;
+            background: #fff;
+            overflow: hidden;
+            background-color: darkblue;
+        }
+        .tabLbpic{
+            width: 268px;
+            height: 157px;
+            border: 1px solid #ececec;
+            background: #fff;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            margin-top: 10px;
+            background-color: orange;
+        }
+        .tabLbpicBox{
+            width: 268px;
+            height: 178px;
+            border: 1px solid #ececec;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            margin-top: 10px;
+            background-color: orangered;
+        }
+    
+
+    }
+}
