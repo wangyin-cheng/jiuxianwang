@@ -6,7 +6,9 @@
     width: 1200px;
     margin: 0 auto;
     margin-top: 10px;
-   
+    .spiritWrap{
+        background-color: orange;
+    }
     .titlebox {
         height: 40px;
         line-height: 40px;
@@ -43,7 +45,7 @@
         .comIMue{
             float: right;
             margin-left: 50px;
-            display: inline;
+            // display: inline;
             color: #999;
             a{
                 padding: 0 7px;
@@ -129,7 +131,7 @@
             a{
                 float: left;
                 padding-right: 5px;
-                display: inline-block;
+                // display: inline-block;
                 font-size: 10px;
         
             }

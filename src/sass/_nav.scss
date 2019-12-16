@@ -77,7 +77,7 @@
             height: 20px;
             overflow: hidden;
             a{
-                display: inline-block;
+                // display: inline-block;
                 height: 16px;
                 line-height: 16px;
                 padding: 0 4px;
@@ -139,7 +139,7 @@
         width: 400px;
         height: 470px;
         float: left;
-        display: inline-block;
+        // display: inline-block;
         background: #f1f1f1;
         overflow: hidden;
        .title {
@@ -172,7 +172,7 @@
                 padding: 10px 0 10px;
                 overflow: hidden;
                 a{
-                    display: inline-block;
+                    // display: inline-block;
                     float: left;
                     white-space: nowrap;
                     padding: 0 8px;
@@ -204,7 +204,7 @@
 //2第二块横着的导航
 .nav ol{
     float: left;
-    margin-left: 190px;
+    
     li{
         height: 34px;
         line-height: 34px;

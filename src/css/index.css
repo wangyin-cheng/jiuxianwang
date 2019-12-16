@@ -69,7 +69,6 @@
     padding-top: 1px;
     margin: 9px 3px 9px 1px;
     float: right;
-    display: inline-block;
     color: #999; }
   #topHeader .top-main .main-right li:nth-of-type(1) a:hover {
     color: #cc0001;
@@ -79,7 +78,6 @@
 #topHeaderRight li a,
 #topHeaderRight li span,
 #topHeaderRight li s {
-  display: inline-block;
   float: left;
   color: #999; }
 
@@ -139,7 +137,6 @@
   padding-top: 1px;
   margin: 9px 3px 9px 1px;
   float: right;
-  display: inline-block;
   color: #999; }
 
 #topHeader .main-right li:nth-of-type(8) i {
@@ -154,7 +151,6 @@
   padding-top: 1px;
   margin: 9px 3px 9px 1px;
   float: right;
-  display: inline-block;
   color: #999; }
 
 #topHeader .main-right li:nth-of-type(9) b {
@@ -331,7 +327,6 @@
       height: 20px;
       overflow: hidden; }
       .commodity li .innerLi p a {
-        display: inline-block;
         height: 16px;
         line-height: 16px;
         padding: 0 4px;
@@ -373,7 +368,6 @@
     width: 400px;
     height: 470px;
     float: left;
-    display: inline-block;
     background: #f1f1f1;
     overflow: hidden; }
     .commodity .menuBox .menuCon .title {
@@ -400,7 +394,6 @@
         padding: 10px 0 10px;
         overflow: hidden; }
         .commodity .menuBox .menuCon .main p a {
-          display: inline-block;
           float: left;
           white-space: nowrap;
           padding: 0 8px; }
@@ -419,8 +412,7 @@
       right: -5px; }
 
 .nav ol {
-  float: left;
-  margin-left: 190px; }
+  float: left; }
   .nav ol li {
     height: 34px;
     line-height: 34px;
@@ -662,6 +654,8 @@
   width: 1200px;
   margin: 0 auto;
   margin-top: 10px; }
+  .bjgMain .spiritWrap {
+    background-color: orange; }
   .bjgMain .titlebox {
     height: 40px;
     line-height: 40px;
@@ -694,7 +688,6 @@
     .bjgMain .titlebox .comIMue {
       float: right;
       margin-left: 50px;
-      display: inline;
       color: #999; }
       .bjgMain .titlebox .comIMue a {
         padding: 0 7px;
@@ -764,7 +757,6 @@
     .bjgMain .topTenWrap .hotWordBox li p a {
       float: left;
       padding-right: 5px;
-      display: inline-block;
       font-size: 10px; }
 
 .bjgMain .topTenWrap .topTenBox .topTenNavBox {
@@ -857,12 +849,175 @@
 
 #bottomMain {
   width: 100%;
-  height: 500px;
-  background: blue; }
+  background: #f9f9f9; }
+  #bottomMain .footerTop {
+    width: 100%;
+    background: #333; }
+    #bottomMain .footerTop .footerOne {
+      width: 1200px;
+      margin: 0 auto;
+      height: 84px;
+      border-bottom: 1px solid #494949; }
+      #bottomMain .footerTop .footerOne .footerOneLeft {
+        float: left;
+        height: 40px;
+        line-height: 40px;
+        font-family: 微软雅黑;
+        padding: 22px 0px; }
+        #bottomMain .footerTop .footerOne .footerOneLeft i {
+          width: 40px;
+          height: 40px;
+          background-position: -144px -22px;
+          margin-right: 18px;
+          float: left; }
+        #bottomMain .footerTop .footerOne .footerOneLeft b {
+          font-size: 24px;
+          color: #c00;
+          margin-right: 25px;
+          float: left; }
+        #bottomMain .footerTop .footerOne .footerOneLeft span {
+          font-size: 14px;
+          color: #fff;
+          margin-right: 8px;
+          float: left; }
+      #bottomMain .footerTop .footerOne .footerOneRight {
+        float: right;
+        height: 32px;
+        padding: 26px 0; }
+        #bottomMain .footerTop .footerOne .footerOneRight p {
+          float: left;
+          line-height: 32px;
+          color: white;
+          font-family: 微软雅黑;
+          padding-right: 10px; }
+        #bottomMain .footerTop .footerOne .footerOneRight .content {
+          float: left;
+          width: 240px;
+          height: 30px;
+          border: 1px solid #494949;
+          position: relative;
+          z-index: 99; }
+          #bottomMain .footerTop .footerOne .footerOneRight .content input {
+            width: 190px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 6px;
+            background: 0;
+            border: 0;
+            float: left;
+            color: #fff;
+            outline: 0;
+            vertical-align: middle; }
+          #bottomMain .footerTop .footerOne .footerOneRight .content span {
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            color: #999;
+            position: absolute;
+            left: 6px;
+            top: 0; }
+          #bottomMain .footerTop .footerOne .footerOneRight .content i {
+            width: 22px;
+            height: 18px;
+            background-position: -133px 0;
+            margin: 6px 0 0 10px;
+            cursor: pointer;
+            float: left; }
+
+.footerTop .footerContent {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 0 60px; }
+  .footerTop .footerContent li {
+    float: left;
+    margin-right: 15px; }
+    .footerTop .footerContent li h3 {
+      font-weight: normal;
+      height: 26px;
+      line-height: 26px;
+      padding: 5px 0; }
+      .footerTop .footerContent li h3 i {
+        width: 26px;
+        height: 26px;
+        margin-right: 9px;
+        float: left; }
+      .footerTop .footerContent li h3 span {
+        width: 123px;
+        font-size: 14px;
+        color: #fff;
+        float: left;
+        overflow: hidden;
+        white-space: nowrap; }
+    .footerTop .footerContent li p {
+      width: 123px;
+      height: 26px;
+      line-height: 26px;
+      padding-left: 35px;
+      overflow: hidden;
+      white-space: nowrap; }
+    .footerTop .footerContent li a {
+      color: #ccc; }
+      .footerTop .footerContent li a:hover {
+        text-decoration: underline; }
+
+.footerTop .footerContent li:nth-child(1) i {
+  background-position: 0 -131px; }
+
+.footerTop .footerContent li:nth-child(2) i {
+  background-position: -30px -131px; }
+
+.footerTop .footerContent li:nth-child(3) i {
+  background-position: -60px -131px; }
+
+.footerTop .footerContent li:nth-child(4) i {
+  background-position: -90px -131px; }
+
+.footerTop .footerContent li:nth-child(5) i {
+  background-position: -120px -131px; }
+
+.footerTop .footerContent li:nth-child(6) i {
+  background-position: -150px -131px; }
+
+.newBoxI {
+  background: url(../img/public-24.png) no-repeat; }
 
 #topFocusBox a {
   display: block;
   width: 100%;
   height: 90px; }
+
+#newADBox {
+  width: 1200px;
+  margin: 0 auto;
+  height: 140px;
+  position: fixed;
+  bottom: 10px;
+  left: 70px;
+  z-index: 1; }
+  #newADBox a {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    height: 140px;
+    position: absolute;
+    z-index: 22;
+    background: url(../img/cc27f927eb2f4004ae68d57472303f18.png) no-repeat center; }
+  #newADBox i {
+    font-weight: 800;
+    width: 27px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    right: -30px;
+    top: 8px;
+    cursor: pointer;
+    color: hotpink; }
+  #newADBox p {
+    position: absolute;
+    right: 60px;
+    top: -5px;
+    font-size: 18px; }
 
 /*# sourceMappingURL=index.css.map */

@@ -20,3 +20,40 @@
     height: 90px;
 }
 
+//广告倒计时是样式
+#newADBox{
+    width: 1200px;
+    margin: 0 auto;
+    height: 140px;
+    position: fixed;
+    bottom: 10px;
+    left: 70px;
+    z-index: 1;
+    a{
+        display: block;
+        width: 1200px;
+        margin: 0 auto;
+        height: 140px;
+        position: absolute;
+        z-index: 22;
+        background: url(../img/cc27f927eb2f4004ae68d57472303f18.png) no-repeat center;
+    }
+    i{
+        font-weight: 800;
+        width: 27px;
+        height: 25px;
+        display: block;
+        position: absolute;
+        z-index: 10;
+        right: -30px;
+        top: 8px;
+        cursor: pointer;
+        color: hotpink;
+    }
+    p{
+        position: absolute;
+        right: 60px;
+        top: -5px;
+        font-size: 18px;
+    }
+}
