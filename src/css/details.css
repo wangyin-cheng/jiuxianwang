@@ -49,7 +49,7 @@
       float: right; }
 
 .searchHome .searchCon {
-  width: 250px;
+  width: 500px;
   position: absolute;
   left: -3px;
   top: 35px;
@@ -57,6 +57,28 @@
   background: #fff;
   border: 1px solid #ddd;
   border-top: 0; }
+  .searchHome .searchCon ul {
+    padding-top: 3px; }
+    .searchHome .searchCon ul li {
+      height: 30px;
+      position: relative; }
+      .searchHome .searchCon ul li a {
+        text-decoration: none;
+        border-bottom: 1px dashed #ddd;
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        cursor: pointer; }
+        .searchHome .searchCon ul li a span {
+          width: 280px;
+          color: #333;
+          float: left;
+          display: block;
+          width: 150px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis; }
 
 .headerSearch .hotWords {
   width: 540px;

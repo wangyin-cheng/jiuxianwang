@@ -11,6 +11,8 @@
     <link type=image/x-icon rel="shortcut icon" href=img/2.ico></head>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+    <!-- <script src="js/main.js" async="true"></script> -->
+    <script src="js/usemodule.js" async="true" type="module"></script>
 </head>
 
 <body>
@@ -28,7 +30,7 @@
                 <ul>
                     <li>
                         <div class="myjiuxian">
-                            <a href="#">我的酒仙</a>
+                            <a href="#" class="xa">我的酒仙</a>
                             <s class="publicIcon"></s>
                         </div>
                         <div class="myjiuxianbox">
@@ -55,28 +57,28 @@
                         <s></s>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" class="xa">
                             <i class="publicIcon"></i>
                             手机逛酒仙
                         </a>
                         <s></s>
-                        <div style="display: none;">
+                        <div style="display: none;" class="myjiuxianbox">
                             <img src="img/49.jpg" alt="">
                         </div>
                     </li>
                     <li>
                         <i class="publicIcon"></i>
-                        <a href="#">网站导航</a>
+                        <a href="#" class="xa">网站导航</a>
                         <s class="publicIcon"></s>
                         <div class="myjiuxianbox">
                             <a href="#">白酒</a>
                             <a href="#">葡萄酒</a>
                             <a href="#">洋酒</a>
                         </div>
-                    </li>
+                    </li >
                     <li>
                         <i class="publicIcon"></i>
-                        <a href="#">客户服务</a>
+                        <a href="#" class="xa">客户服务</a>
                         <s class="publicIcon"></s>
                         <div class="myjiuxianbox">
                             <a href="#">常见问题</a>
@@ -132,7 +134,38 @@
                         <ul></ul>
                     </div>
                 </div>
-
+                <script>
+                    let mhinp=document.querySelector("#wd");
+                    let mhaul=document.querySelector("#searchCon ul");
+                    let mhsearchCon=document.querySelector("#searchCon");
+                    function jQuery111102950508585555214_1576571598425(data){
+                        let htmlstr='';
+                        console.log(data.resultList.length)
+                        for(let i=0;i<data.resultList.length;i++){
+                            htmlstr+=`
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            ${data.resultList[i].word}
+                                        </span>
+                                        </a>
+                                </li>
+                            `;
+                        }
+                        mhaul.innerHTML=htmlstr;
+                    }
+                    mhinp.oninput=function(){
+                        
+                        mhsearchCon.style.display="block";
+                    //http://list.jiuxian.com/assKeyWords.htm?t=1576580499738&callback=jQuery111102950508585555214_1576571598425&wd='+search.value+'&area=2&searchUserKey=3209f49d-7b55-1d62-9400-24ab65da9a50&randomTest=0.9823609082279539&_=1576571598430
+                    let cScript=document.createElement('script');
+                    cScript.src='http://list.jiuxian.com/assKeyWords.htm?t=1576580499738&callback=jQuery111102950508585555214_1576571598425&wd='+this.value+'&area=2&searchUserKey=3209f49d-7b55-1d62-9400-24ab65da9a50&randomTest=0.9823609082279539&_=1576571598430';
+                    document.body.appendChild(cScript);
+                    }
+                    mhinp.onblur=function(){
+                        mhsearchCon.style.display="none";
+                    }
+                </script>
                 <div class="hotWords" style="display: block;">
                     <p>
                         <a href="#">五粮液<s></s>
@@ -797,7 +830,7 @@
         
     </div>
      <!-- 广告倒计时效果 -->
-     <div id="newADBox">
+     <div id="newADBox" style="display: none;">
          <a href="#">
          </a>
          <p>广告 <strong>&nbsp;5&nbsp;</strong>秒关闭</p>

@@ -1,0 +1,24 @@
+@import "cart-top";
+.midHeader {
+    background: #fff;
+    height: 90px;
+    width: 100%;
+    .midHeaderBox {
+        height: 90px;
+        margin: 0 auto;
+        position: relative;
+        width: 1000px;
+        z-index: 102;
+        .jxwLogo {
+            float: left;
+            height: 63px;
+            margin-top: 20px;
+            width: 257px;
+            P{
+                height: 63px;
+                float: left;
+                width: 140px;
+            }
+        }
+    }
+}
