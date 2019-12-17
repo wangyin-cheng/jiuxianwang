@@ -1,0 +1,1 @@
+"use strict";var _Tab=require("./Tab.js");(new _Tab.Tab).init();
