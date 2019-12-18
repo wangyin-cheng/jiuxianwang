@@ -5,7 +5,7 @@ function $(ele, all) {
         return document.querySelectorAll(ele);
     }
 }
-class Tab {
+class Mouseout {
     constructor() {
         this.topA = $("#topHeader li .xa", "all")
         this.mjxb = $("#topHeader .myjiuxianbox", "all")
@@ -60,14 +60,15 @@ class Tab {
         }
         window.onscroll = function () {
             if (document.documentElement.scrollTop > 800) {
-                // AnewADBox.style.display = "block"
                 clearInterval(Atime);
                 Atime = setInterval(() => {
+                    AnewADBox.style.display = "block"
                     console.log(num)
                     if(num>1){
+                        
                             num--;
                             Astrong.innerHTML = num;
-                            AnewADBox.style.display = "block"
+                           
                     }else{
                         num=0;
                         console.log("lishi")
@@ -99,6 +100,15 @@ class Tab {
     }
 
 }
+class Lbp{
+    constructor(){
+
+    }
+    init(){
+        alert(1);
+    }
+}
 export {
-    Tab
+    Mouseout,
+    Lbp
 };

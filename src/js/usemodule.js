@@ -1,2 +1,3 @@
-import { Tab } from './Tab.js';
-new Tab().init();
+import { Mouseout,Lbp } from './Tab.js';
+new Mouseout().init();
+new Lbp().init();
