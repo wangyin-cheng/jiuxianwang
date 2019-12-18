@@ -1,1 +1,1 @@
-"use strict";var _Tab=require("./Tab.js");(new _Tab.Tab).init();
+"use strict";var _Tab=require("./Tab.js"),sid=document.querySelector("#topHeader");""!==sid&&((new _Tab.Mouseout).init(),(new _Tab.Lbp).init());

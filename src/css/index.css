@@ -491,10 +491,15 @@
     height: 470px;
     overflow: hidden;
     text-align: center;
+    opacity: 0.9;
     position: absolute;
     left: 0px;
     top: 0px;
-    display: none; }
+    opacity: 0.5;
+    transition: all 2s; }
+  .luobowrap .bigImg ul #hL {
+    z-index: 8;
+    opacity: 1; }
 
 #mainWrap .imgBnt {
   left: 0;
@@ -519,13 +524,13 @@
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    *display: inline;
-    zoom: 1;
     font-size: 12px;
     height: 20px;
     line-height: 20px;
     margin-right: 8px;
     opacity: 0.8; }
+  #mainWrap .imgBnt .on {
+    background: #dd102e; }
 
 .MianTab {
   width: 1200px;
@@ -541,14 +546,48 @@
       width: 920px;
       overflow: hidden;
       height: 38px;
-      position: relative;
-      background-color: darkblue; }
+      position: relative; }
+      .MianTab .tabLeft .titie .n1 {
+        left: 0; }
+      .MianTab .tabLeft .titie .n2 {
+        left: 184px; }
+      .MianTab .tabLeft .titie .n3 {
+        left: 368px; }
+      .MianTab .tabLeft .titie .n4 {
+        left: 552px;
+        width: 183px; }
+      .MianTab .tabLeft .titie .n5 {
+        left: 736px;
+        width: 182px; }
+      .MianTab .tabLeft .titie .on {
+        width: 183px;
+        border-top: 2px solid #cc0000;
+        border-bottom: 1px solid #fff;
+        height: 35px;
+        color: #cc0000;
+        line-height: 35px;
+        background: #fff; }
+      .MianTab .tabLeft .titie li {
+        width: 183px;
+        height: 35px;
+        position: absolute;
+        top: 0px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 35px;
+        font-size: 16px;
+        color: #666666;
+        font-family: 微软雅黑;
+        border-left: 1px solid #ececec;
+        border-right: 1px solid #ececec;
+        border-bottom: 1px solid #ececec;
+        border-top: 2px solid #ececec;
+        background: #f9f9f9; }
     .MianTab .tabLeft .content {
       border: 1px solid #ececec;
       border-top: none;
       height: 460px;
-      overflow: hidden;
-      background-color: cyan; }
+      overflow: hidden; }
   .MianTab .tabRight {
     width: 270px;
     float: right;
@@ -557,8 +596,36 @@
       width: 270px;
       height: 140px;
       background: #fff;
-      overflow: hidden;
-      background-color: darkblue; }
+      overflow: hidden; }
+      .MianTab .tabRight .tabLbNew .LbNewNav {
+        height: 35px;
+        position: relative; }
+        .MianTab .tabRight .tabLbNew .LbNewNav li {
+          font-size: 16px;
+          font-family: 微软雅黑;
+          text-align: center;
+          width: 134px;
+          height: 34px;
+          line-height: 34px;
+          position: absolute;
+          top: 0px;
+          cursor: pointer;
+          border-width: 1px;
+          border-style: solid;
+          border-color: #ececec;
+          border-image: initial; }
+        .MianTab .tabRight .tabLbNew .LbNewNav .on {
+          border-top: 2px solid #c41921;
+          border-bottom: 1px solid #fff;
+          height: 34px;
+          color: #cc0000;
+          line-height: 33px;
+          background: #fff; }
+        .MianTab .tabRight .tabLbNew .LbNewNav .s1 {
+          left: 0; }
+        .MianTab .tabRight .tabLbNew .LbNewNav .s2 {
+          left: 135px;
+          width: 133px; }
     .MianTab .tabRight .tabLbpic {
       width: 268px;
       height: 157px;
@@ -578,6 +645,63 @@
       z-index: 1;
       margin-top: 10px;
       background-color: orangered; }
+
+#mainWrap .tabRight .LbNewCon {
+  border: 1px solid #ececec;
+  border-top: none;
+  height: 94px;
+  padding-top: 10px; }
+  #mainWrap .tabRight .LbNewCon ul {
+    width: 258px;
+    margin: 0 auto; }
+    #mainWrap .tabRight .LbNewCon ul li {
+      float: left;
+      width: 114px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      line-height: 28px; }
+      #mainWrap .tabRight .LbNewCon ul li a {
+        color: #666; }
+
+.content {
+  height: 442px;
+  margin: 0 auto;
+  padding: 10px 0;
+  overflow: hidden;
+  position: relative; }
+  .content ul li {
+    float: left;
+    width: 182px;
+    margin-top: 20px; }
+    .content ul li .indexTabPic {
+      width: 160px;
+      position: relative;
+      z-index: 1; }
+    .content ul li .indexTabTit {
+      width: 170px;
+      padding: 0 6px;
+      height: 18px;
+      line-height: 18px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap; }
+    .content ul li .indexTabPrice {
+      width: 170px;
+      padding: 0 6px;
+      height: 18px;
+      line-height: 18px;
+      overflow: hidden;
+      white-space: nowrap;
+      color: #cd0100; }
+      .content ul li .indexTabPrice strong {
+        font-family: 微软雅黑;
+        font-size: 12px;
+        color: #cd0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle; }
 
 .layerWarp {
   width: 1200px;
@@ -677,7 +801,71 @@
   margin: 0 auto;
   margin-top: 10px; }
   .bjgMain .spiritWrap {
-    background-color: orange; }
+    width: 1198px;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    border-top: 2px solid #c94b56;
+    height: 485px;
+    overflow: hidden; }
+    .bjgMain .spiritWrap .bannerSlier {
+      height: 485px;
+      width: 210px;
+      position: relative;
+      overflow: hidden;
+      float: left;
+      background-color: orange; }
+    .bjgMain .spiritWrap .spiritList {
+      width: 988px;
+      float: right;
+      height: 485px;
+      overflow: hidden;
+      position: relative; }
+      .bjgMain .spiritWrap .spiritList li {
+        float: left;
+        width: 196px;
+        height: 232px;
+        border-bottom: 1px solid #ececec;
+        border-left: 1px solid #ececec;
+        position: relative;
+        padding-top: 10px;
+        z-index: 1; }
+  .bjgMain .spiritList li .spiritListPic {
+    width: 160px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1; }
+    .bjgMain .spiritList li .spiritListPic a {
+      color: #666; }
+  .bjgMain .spiritList li .spiritListTit {
+    width: 160px;
+    padding: 0 18px;
+    height: 36px;
+    overflow: hidden;
+    margin-top: 5px; }
+    .bjgMain .spiritList li .spiritListTit a {
+      display: block;
+      width: 100%;
+      height: 18px;
+      line-height: 18px;
+      font-size: 12px; }
+      .bjgMain .spiritList li .spiritListTit a:hover {
+        color: orangered;
+        text-decoration: underline; }
+  .bjgMain .spiritList li .spiritListPrice {
+    width: 178px;
+    padding: 0 0 0 18px;
+    height: 18px;
+    overflow: hidden;
+    line-height: 18px;
+    white-space: nowrap; }
+    .bjgMain .spiritList li .spiritListPrice strong {
+      font-size: 12px;
+      font-weight: normal;
+      font-family: 微软雅黑;
+      color: #cd0100;
+      display: inline;
+      vertical-align: middle; }
   .bjgMain .titlebox {
     height: 40px;
     line-height: 40px;

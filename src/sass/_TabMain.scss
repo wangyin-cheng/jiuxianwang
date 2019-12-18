@@ -12,18 +12,58 @@
         height: 499px;
         .titie{
             width: 920px;
-            
             overflow: hidden;
             height: 38px;
             position: relative;
-            background-color: darkblue;
+            .n1{
+                left: 0;
+            }
+            .n2{
+                left: 184px;
+            }
+            .n3{
+                left: 368px;
+            }
+            .n4{
+                left: 552px;
+                width: 183px;
+            }
+            .n5{
+                left: 736px;
+                width: 182px;
+            }
+            .on{
+                width: 183px;
+                border-top: 2px solid #cc0000;
+                border-bottom: 1px solid #fff;
+                height: 35px;
+                color: #cc0000;
+                line-height: 35px;
+                background: #fff;
+            }
+            li{
+                width: 183px;
+                height: 35px;
+                position: absolute;
+                top: 0px;
+                cursor: pointer;
+                text-align: center;
+                line-height: 35px;
+                font-size: 16px;
+                color: rgb(102, 102, 102);
+                font-family: 微软雅黑;
+                border-left: 1px solid rgb(236, 236, 236);
+                border-right: 1px solid rgb(236, 236, 236);
+                border-bottom: 1px solid rgb(236, 236, 236);
+                border-top: 2px solid rgb(236, 236, 236);
+                background: rgb(249, 249, 249);
+            }
         }   
         .content{
             border: 1px solid #ececec;
             border-top: none;
             height: 460px;
             overflow: hidden;
-            background-color: cyan;
      }
     }
     .tabRight{
@@ -35,7 +75,42 @@
             height: 140px;
             background: #fff;
             overflow: hidden;
-            background-color: darkblue;
+            
+            .LbNewNav{
+                height: 35px;
+                position: relative;
+                li{
+                    font-size: 16px;
+                    font-family: 微软雅黑;
+                
+                    text-align: center;
+                    width: 134px;
+                    height: 34px;
+                    line-height: 34px;
+                    position: absolute;
+                    top: 0px;
+                    cursor: pointer;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: rgb(236, 236, 236);
+                    border-image: initial;
+                }
+                .on{
+                    border-top: 2px solid #c41921;
+                    border-bottom: 1px solid #fff;
+                    height: 34px;
+                    color: #cc0000;
+                    line-height: 33px;
+                    background: #fff;
+                }
+                .s1{
+                    left: 0;
+                }
+                .s2{
+                    left: 135px;
+                    width: 133px;
+                }
+            }
         }
         .tabLbpic{
             width: 268px;
@@ -61,4 +136,75 @@
     
 
     }
+}
+// 右边的文字tab切换
+#mainWrap .tabRight .LbNewCon{
+    border: 1px solid #ececec;
+    border-top: none;
+    height: 94px;
+    padding-top: 10px;
+    ul{
+        width: 258px;
+        margin: 0 auto;
+        li{
+            float: left;
+            width: 114px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            line-height: 28px;
+        a{
+            color: #666;
+        }
+        }
+    }
+}
+
+//tab切换的样式 
+.content{
+height: 442px;
+margin: 0 auto;
+padding: 10px 0;
+overflow: hidden;
+position: relative;
+ul{
+    li{
+        float: left;
+        width: 182px;
+        margin-top: 20px;
+        .indexTabPic{
+            width: 160px;
+            position: relative;
+            z-index: 1;
+        }
+        .indexTabTit{
+            width: 170px;
+            padding: 0 6px;
+            height: 18px;
+            line-height: 18px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        
+        }
+        .indexTabPrice{
+            width: 170px;
+            padding: 0 6px;
+            height: 18px;
+            line-height: 18px;
+            overflow: hidden;
+            white-space: nowrap;
+            color: rgb(205, 1, 0);
+            strong{
+                font-family: 微软雅黑;
+                font-size: 12px;
+                color: rgb(205, 1, 0);
+                font-weight: normal;
+                line-height: 18px;
+                display: inline;
+                vertical-align: middle;
+            }
+        }
+    }
+}
 }

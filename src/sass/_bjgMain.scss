@@ -7,8 +7,86 @@
     margin: 0 auto;
     margin-top: 10px;
     .spiritWrap{
-        background-color: orange;
+        width: 1198px;
+        border-left: 1px solid #ececec;
+        border-right: 1px solid #ececec;
+        border-bottom: 1px solid #ececec;
+        border-top: 2px solid #c94b56;
+        height: 485px;
+        overflow: hidden;
+        .bannerSlier{
+            height: 485px;
+            width: 210px;
+            position: relative;
+            overflow: hidden;
+            float: left;
+            background-color: orange;
+        }
+        .spiritList{
+            width: 988px;
+            float: right;
+            height: 485px;
+            overflow: hidden;
+            position: relative;
+            li{
+                float: left;
+                width: 196px;
+                height: 232px;
+                border-bottom: 1px solid #ececec;
+                border-left: 1px solid #ececec;
+                position: relative;
+                padding-top: 10px;
+                z-index: 1;
+            }
+
+        }
     }
+    .spiritList li{
+        .spiritListPic{
+            width: 160px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            a{
+                color: #666;
+            }
+        }
+        .spiritListTit {
+            width: 160px;
+            padding: 0 18px;
+            height: 36px;
+            overflow: hidden;
+            margin-top: 5px;
+            a{
+                display: block;
+                width: 100%;
+                height: 18px;
+                line-height: 18px;
+                font-size: 12px;
+                &:hover{
+                    color: orangered;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .spiritListPrice {
+            width: 178px;
+            padding: 0 0 0 18px;
+            height: 18px;
+            overflow: hidden;
+            line-height: 18px;
+            white-space: nowrap;
+            strong{
+                font-size: 12px;
+                font-weight: normal;
+                font-family: 微软雅黑;
+                color: rgb(205, 1, 0);
+                display: inline;
+                vertical-align: middle;
+            }
+        }
+    }
+
     .titlebox {
         height: 40px;
         line-height: 40px;
