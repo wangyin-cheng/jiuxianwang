@@ -1,5 +1,5 @@
 
-import{bufferMove,$,ajax} from './toolbar.js';
+import { bufferMove, $, ajax } from './toolbar.js';
 class Mouseout {
     constructor() {
         this.topA = $("#topHeader li .xa", "all")
@@ -22,10 +22,13 @@ class Mouseout {
             this.nwLi[i].onmouseover = function () {
                 _this.nwLi[i].style.borderLeftColor = "red";
                 _this.nwmB.style.display = "block";
+              
             }
-            this.nwLi[i].onmouseout = function () {
+            this.nwLi[i].onmouseout = function (ev) {
+                    var ev= ev ||event;
                 _this.nwLi[i].style.borderLeftColor = "#e4e4e4";
                 _this.nwmB.style.display = "none";
+            
             }
         }
     }
@@ -35,10 +38,17 @@ class Mouseout {
         for (let i = 0; i < this.topA.length; i++) {
             this.topA[i].onmouseover = function () {
                 _this.mjxb[i].style.display = "block";
+                _this.mjxb[i].onmouseover=function(){
+                    _this.mjxb[i].style.display = "block";
+                }
+                _this.mjxb[i].onmouseout=function(){
+                    _this.mjxb[i].style.display = "none";
+                }
             }
             this.topA[i].onmouseout = function () {
                 _this.mjxb[i].style.display = "none";
             }
+            
         }
     }
     // 广告倒计时效果
@@ -88,76 +98,71 @@ class Lbp {
         this.Lbul = $(".luobowrap .bigImg ul");
         this.Lbli = $(".luobowrap .bigImg li", "all")
         this.Lbspan = $("#mainWrap .imgBnt span", "all")
-        this.Lbtime = null;
-        this.index=0;
+        this.index = 0;
 
     }
     init() {
         //   按钮
-       
         let _this = this;
+        let timer=null;
         for (let i = 0; i < this.Lbspan.length; i++) {
-            this.Lbspan[i].abc = i;  //添加自定义属性
             this.Lbspan[i].onmouseover = function () {
-                
-                clearInterval(this.Lbtime);
-                for (let j = 0; j < _this.Lbspan.length; j++) {
-                    _this.Lbspan[j].className = "";
-                    _this.Lbli[j].id = "";
-                }
-                this.className = "on";
-                _this.Lbli[i].id = "hL";
-                _this.index = this.abc;
+                _this.index = i;
+                _this.change();
+            }
+        }
 
-                _this.zd( _this.index)
-            }
-        }
-        this.zd(_this.index)
-        this.asjaxa()
-        // console.log(_this.index)
-        this.Lbul.onmouseout = function (index) {
-            index = _this.index
-            _this.zd(index)
-        }
-    }
-    // 自动运动
-    zd(index) {
-        clearInterval(this.Lbtime);
-        var _this = this;
-        this.Lbtime = setInterval(() => {
-            index++;
-            // console.log(index)
-            if (index > 9) {
-                index = 0;
-            }
-            for (let j = 0; j < this.Lbspan.length; j++) {
-                this.Lbspan[j].className = "";
-                this.Lbli[j].id = "";
-            }
-            this.Lbspan[index].className = "on";
-            this.Lbli[index].id = "hL";
-        }, 1000);
 
         this.Lbul.onmouseenter = function () {
-            clearInterval(_this.Lbtime);
-            
+            clearInterval(timer); 
         }
-    }
-    asjaxa(){
-        let aList=document.querySelector("#mainWrap .list");
-        let aclearfix=document.querySelector("#mainWrap .spiritWrap .clearfix");
+        this.Lbul.onmouseout = function (index) {
+            timer=setInterval(function(){
+                _this.zd();
+            },2000);
+        }
+
+        timer=setInterval(function(){
+            _this.zd();
+        },2000);
         
-        let htmlstr="";
-        let htmlstr2="";
+        // 获取数据
+        this.asjaxa();
+    }
+    // 切换
+    change() {
+        for (let j = 0; j < this.Lbspan.length; j++) {
+            this.Lbspan[j].className = "";
+            this.Lbli[j].id = "";
+        }
+            this.Lbspan[this.index].className = "on";
+            this.Lbli[this.index].id = "hL";
+        }
+    // 自动运动
+    zd() {
+        this.index++;
+        if(this.index>this.Lbli.length-1){
+            this.index=0;
+        }
+        this.change();
+    }
+    asjaxa() {
+        let aList = document.querySelector("#mainWrap .list");
+        let Tbwz=document.querySelectorAll(".MianTab .titie li");
+        let aclearfix = document.querySelector("#mainWrap .spiritWrap .clearfix");
+        let Alist= document.querySelector("#mainWrap .content .list");
+        
+        let htmlstr = "";
+        let htmlstr2 = "";
+        let htmlstr3Ul="";
         ajax({
-            url:"http://localhost//kejian/jiuxianwang/php/picmiaoshu.php",
-            dataType:'json',
-        }).then(function(data){
-            console.log(data);
-            htmlstr="<ul>"
-            htmlstr2="";
-            for(let i=0;i<data.length;i++){
-              htmlstr+= ` 
+            url: "http://localhost//kejian/jiuxianwang/php/picmiaoshu.php",
+            dataType: 'json',
+        }).then(function (data) {
+            htmlstr = "<ul style='display:none;'>"
+            htmlstr2 = "";
+            for (let i = 0; i < data.length; i++) {
+                htmlstr += ` 
                 <li>
                     <div class="indexTabPic">
                         <a href="#"target="_blank" title="">
@@ -175,7 +180,7 @@ class Lbp {
                     </div>
                 </li>
                             `
-                htmlstr2+=`
+                htmlstr2 += `
                         <li>
                         <div class="spiritListPic">
                             <a href="#" target="_blank">
@@ -194,15 +199,63 @@ class Lbp {
                     </li>
                             `
             }
-            htmlstr+="</ul>"
-            aList.innerHTML=htmlstr;
-            aclearfix.innerHTML=htmlstr2;
+            htmlstr += "</ul>"
+            aList.innerHTML = htmlstr;
+            aclearfix.innerHTML = htmlstr2;
+            
+           for(let i=0;i<Tbwz.length;i++){
+                htmlstr3Ul+=htmlstr;
+           }
+           Alist.innerHTML=htmlstr3Ul;
+          
+           Alist.children[0].style.display="block";
         })
     }
+
+}
+
+class tab {
+    constructor() {
+
+    }
+    init() {
+        this.dtab();
+    }
+    over(ele,atter,i){
+        for (let j = 0; j < ele.length; j++) {
+            let className2 = ele[j].className.split(" ");
+            if(className2.indexOf(atter)!==-1){
+                className2.splice(className2.indexOf(atter),1)
+                ele[j].className=className2.join(" ")
+            }else{
+                ele[j].className=className2.join(" ");
+            }
+        }
+      let className1= ele[i].className.split(" ")
+            className1.push(atter);
+        ele[i].className= className1.join(" ");
+    
+    }
+    dtab() {
+        let atitle = document.querySelectorAll(".MianTab .titie li");
+        let Alist= document.querySelector("#mainWrap .content .list");
+        let _this=this;
+            for (let i = 0; i < atitle.length; i++) {
+                atitle[i].onmouseover = function () { 
+                _this.over(atitle,"on",i);
+                for(let j=0;j<Alist.children.length;j++){
+                    Alist.children[j].style.display="none";
+                }
+                Alist.children[i].style.display="block";
+            }
+        }
+    }
+
 }
 
 
 export {
     Mouseout,
-    Lbp
+    Lbp,
+    tab
 };
