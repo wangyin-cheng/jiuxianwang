@@ -1,1 +1,0 @@
-"use strict";var _Tab=require("./Tab.js"),sid=document.querySelector("#topHeader");""!==sid&&((new _Tab.Mouseout).init(),(new _Tab.Lbp).init(),(new _Tab.tab).init());
